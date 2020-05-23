@@ -1,0 +1,12 @@
+
+
+ones = ["", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
+tens = ["ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"]
+digit2 = ["","","twenty", "thirty", "fourty", "fifty", "sixty", "seventy", "eighty", "ninety"]
+
+def parse(x):
+    x = str(x)
+    for digit in range(len(x)):
+        print(x[:(-1*digit)])
+
+parse(100392)

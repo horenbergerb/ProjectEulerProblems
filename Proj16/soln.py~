@@ -1,0 +1,9 @@
+
+
+#gotta take 2^1000 and sum the digits
+#or 1048576^25
+
+
+target = 1048576
+
+print(target**25)

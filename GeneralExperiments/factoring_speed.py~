@@ -1,0 +1,19 @@
+from sympy import sieve
+from sympy import factorint
+import cProfile
+
+pr = cProfile.Profile()
+pr.enable()
+
+max_n = 20000000
+
+print("Solving factorizations up to n = {}".format(max_n))
+print("Calculating all necessary primes...")
+sieve.extend_to_no(int(sqrt(max_n))+1)
+
+for x in range(2, max_n+1):
+    factorint(x)
+
+
+pr.disable()
+pr.print_stats(sort='time')

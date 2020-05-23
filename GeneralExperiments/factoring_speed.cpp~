@@ -1,0 +1,23 @@
+#include <iostream>
+#include <vector>
+
+using namespace std
+
+void main(){
+
+  unsigned long int max_n = 2000001;
+  
+  vector<int>primes (max_n, 1);
+
+  for(int i = 2; i < max_n; i+= 1){
+    if primes[i] == 1{
+	for(int j = i+i; j < max_n; j += i){
+	  primes[j] = 0;
+	}
+      }
+  }
+
+  int test = 19;
+  cout << "Is " << test << " prime? " << primes[test] << endl;
+  
+}

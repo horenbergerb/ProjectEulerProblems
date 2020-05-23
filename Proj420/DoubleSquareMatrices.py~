@@ -1,0 +1,17 @@
+
+
+class matrix():
+    def __init__(a, b, c, d):
+        self.a = a
+        self.b = b
+        self.c = c
+        self.d = d
+
+    def print_matrix():
+        print("|{} {}|\n |{} {}|".format(a, b, c, d))
+
+    def product(matrix):
+        return matrix(self.a*matrix.a + self.b*matrix.c, self.a*matrix.b + self.b*matrix.d, self.c*matrix.a + self.d*matrix.c, self.c*matrix.b + self.d*matrix.d)
+        
+    def square():
+        s
